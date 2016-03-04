@@ -30,8 +30,8 @@ public class Test extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        //response.sendError(HttpServletResponse.SC_NOT_FOUND,"Request Could Not Be Completed");
-        response.sendError(HttpServletResponse.SC_ACCEPTED,"Request Completed");
+        response.sendError(HttpServletResponse.SC_NOT_FOUND,"Request Could Not Be Completed");
+        //response.sendError(HttpServletResponse.SC_ACCEPTED,"Request Completed");
         
     }
 
